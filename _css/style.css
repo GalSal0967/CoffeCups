@@ -1,0 +1,6 @@
+body {
+    background-image: url("cafe.jpg"); /* Caminho relativo */
+    background-size: cover; /* Ajusta a imagem para cobrir a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
