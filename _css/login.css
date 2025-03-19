@@ -1,0 +1,201 @@
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Centralizando a div no meio da tela */
+body {
+    display: flex;
+    flex-direction: column; /* Faz os elementos ficarem empilhados (um abaixo do outro) */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    height: 100vh; /* Faz a tela ocupar toda a altura do navegador */
+    background-color: #f3ebe1; /* Tom de café claro */
+
+    background-image: url("../_img/fundo.webp"); /* Sobe um nível para achar a imagem */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+/* Deixa o título centralizado e com um espacinho abaixo */
+.titulo {
+    text-align: center;
+    margin-bottom: 60px; /* Dá um espaço entre o título e a .boxe */
+
+}
+
+
+.coffee-icon2 {
+    position: absolute;
+    width: 130px; /* Ajuste o tamanho do ícone */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Adiciona um pequeno espaço entre o ícone e o texto */
+    vertical-align: middle;
+    margin-bottom: 530px;
+}
+
+
+.seta {
+    margin-left: -380px;
+    cursor: pointer;
+    
+}
+
+.titulo h1 {
+    font-size: 50px;
+    color: white;
+    margin-left: 140px;
+    cursor: pointer;
+    display: flex;
+    transform: scale(1.45);
+}
+
+.half2 {
+    color: rgb(95, 54, 0);
+}
+
+.coffee-icon {
+    width: 70px; /* Ajuste o tamanho do ícone */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: 10px; /* Adiciona um pequeno espaço entre o ícone e o texto */
+    vertical-align: middle;
+}
+
+.titulo h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: rgb(95, 54, 0);
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+.boxe {
+    background: #fff;
+    padding: 60px 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+}
+
+/* Mantém o header fixo no topo da .boxe */
+.header {
+    
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    position: relative;
+    top: -20px; /* Ajuste esse valor para mover o título para cima */
+    font-size: 55px;
+    color: rgb(95, 54, 0);
+}
+
+.header p {
+    position: relative;
+    top: -18px; /* Ajuste esse valor para mover o título para cima */
+    font-size: 25px;
+    color: rgb(95, 54, 0);
+}
+
+
+/* Garante que o restante do conteúdo fique abaixo do header */
+.content {
+    flex: 1; /* Ocupa o espaço restante */
+}
+
+
+/* Estilizando os inputs */
+input {
+    width: 100%; /* Faz os inputs ocuparem toda a largura disponível */
+    padding: 10px; /* Dê um bom preenchimento interno para os inputs */
+    margin: 8px 0; /* Espaço entre os inputs */
+    border: 2px solid rgb(95, 54, 0);  /* Cor da borda */
+    border-radius: 15px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #333; /* Cor do texto dentro do input */
+    background-color: #f9f9f9; /* Cor de fundo do input */
+    transition: all 0.3s ease; /* Suaviza as transições */
+}
+
+button {
+    width: 120%; /* Faz os inputs ocuparem toda a largura disponível */
+    padding: 10px; /* Dê um bom preenchimento interno para os inputs */
+    margin: 7px 0; /* Espaço entre os inputs */
+    border: 2px solid rgb(95, 54, 0);  /* Cor da borda */
+    border-radius: 15px; /* Cantos arredondados */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #ffffff; /* Cor do texto dentro do input */
+    background-color:  rgba(92, 54, 5, 0.849); /* Cor de fundo do input */
+    transition: all 0.3s ease; /* Suaviza as transições */
+    margin-left: -20px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.02); /* Aumenta o ícone ao passar o mouse */
+    border-color: #8B5E3C; /* Escurece a borda marrom no hover */
+}
+
+
+.forgot-password {
+    margin-top: 10px; /* Espaço superior */
+    font-size: 14px; /* Tamanho da fonte */
+    
+}
+
+.forgot-password a {
+    color: rgb(95, 54, 0); /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Deixa o link em negrito */
+    transition: color 0.3s ease; /* Suaviza a transição da cor */
+}
+
+.forgot-password a:hover {
+    color: #4285F4; /* Cor do link quando o mouse passa sobre ele */
+}
+
+/* Estilo para a linha separadora */
+.separator {
+    width: 100%; /* A linha ocupa 80% da largura */
+    margin: 20px 0; /* Adiciona espaço acima e abaixo da linha */
+    border: none; /* Remove bordas padrões */
+    border-top: 2px solid rgb(95, 54, 0); /* Cor e espessura da linha */
+}
+
+/* Estilo para a div que contém os ícones */
+.botoes {
+    display: flex; /* Organiza os ícones lado a lado */
+    gap: 20px; /* Espaço entre os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    align-items: center; /* Centraliza os ícones verticalmente */
+}
+
+/* Estilo para os ícones */
+.icons {
+    width: 50px; /* Tamanho do ícone (ajuste conforme necessário) */
+    height: 50px; /* Tamanho do ícone (ajuste conforme necessário) */
+    border: 2px solid #6F4F30; /* Borda marrom */
+    border-radius: 50%; /* Bordas arredondadas */
+    padding: 8px; /* Adiciona espaço dentro da borda */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Animação suave para o efeito hover */
+}
+
+/* Efeito de hover */
+.icons:hover {
+    transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+    border-color: #8B5E3C; /* Escurece a borda marrom no hover */
+}
+
